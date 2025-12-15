@@ -200,60 +200,33 @@
         <div class="cardHeader">Free Instant Quote</div>
         <div class="cardBody">
           <div class="formWrap">
-           ​You​
-<form
-  action="https://formsubmit.co/metrobasementpros@proton.me"
+              <form
+  action="https://api.staticforms.xyz/submit"
   method="POST"
   class="leadForm"
 >
 
-  <!-- Required fields -->
-  <input
-    type="text"
-    name="name"
-    placeholder="Your Name"
-    required
-  >
+  <!-- Required StaticForms fields -->
+  <input type="hidden" name="accessKey" value="sf_9222f61bbc71dgcmfg53dbf7">
+  <input type="hidden" name="subject" value="New Basement Lead">
+  <input type="hidden" name="replyTo" value="@">
+  <input type="hidden" name="redirectTo" value="https://metrobassment.github.io/">
 
-  <input
-    type="email"
-    name="email"
-    placeholder="Email Address"
-    required
-  >
+  <!-- Lead fields -->
+  <input type="text" name="name" placeholder="Your Name" required>
 
-  <input
-    type="tel"
-    name="phone"
-    placeholder="Phone (optional)"
-  >
+  <input type="email" name="email" placeholder="Email Address" required>
 
-  <input
-    type="text"
-    name="zip"
-    placeholder="ZIP Code"
-    required
-  >
+  <input type="tel" name="phone" placeholder="Phone (optional)">
+
+  <input type="text" name="zip" placeholder="ZIP Code" required>
 
   <textarea
     name="message"
     rows="4"
-    placeholder="Briefly describe the issue (water in basement, wall cracks, musty smell, etc.)"
+    placeholder="Briefly describe the issue (water in basement, cracks, musty smell, etc.)"
+    required
   ></textarea>
-
-  <!-- FormSubmit configuration -->
-  <input type="hidden" name="_subject" value="New Basement Lead">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_captcha" value="false">
-
-  <!-- Optional thank-you redirect (safe to add later) -->
-  <!--
-  <input
-    type="hidden"
-    name="_next"
-    value="https://metrobassment.github.io/thank-you.html"
-  >
-  -->
 
   <button type="submit">Get Free Estimate</button>
 
