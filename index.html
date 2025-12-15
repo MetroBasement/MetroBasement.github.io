@@ -200,8 +200,37 @@
         <div class="cardHeader">Free Instant Quote</div>
         <div class="cardBody">
           <div class="formWrap">
-            <!-- IMPORTANT: Use the Google Form EMBED url (from Send -> <> Embed HTML) -->
-            <iframe></iframe>
+           <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <label>
+                Name
+                <input type="text" name="name" required>
+              </label>
+
+              <label>
+                Email
+                <input type="email" name="email" required>
+              </label>
+
+              <label>
+                Phone (optional)
+                <input type="tel" name="phone" autocomplete="tel">
+              </label>
+
+              <label>
+                ZIP Code
+                <input type="text" name="zip" required>
+              </label>
+
+              <label>
+                What’s going on?
+                <textarea name="message" rows="4" placeholder="Water in basement, wall cracks, musty smell, etc."></textarea>
+              </label>
+
+              <!-- optional: helps reduce spam -->
+              <input type="text" name="_gotcha" style="display:none">
+
+              <button type="submit">Get Free Estimate</button>
+            </form>
           </div>
           <div class="smallNote">
             Email-only intake. Please don’t submit sensitive information.
