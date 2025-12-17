@@ -63,21 +63,15 @@
     /* Logo inside hero (replaces the old H1) */
     .hero-img{
       display:block;
+      max-width: 100%;
       width:min(520px, 85vw);   /* responsive, prevents huge logo */
       height:auto;
-      margin:0 auto;
-      margin-bottom: 10px;
+      margin:0 auto 10px;
       background: transparent;
     }
-
-    .hero-img{
-      max-width: 100%;
-    }
-
-
     @media (max-width: 600px){
     .hero-img{
-      width:min(380px, 92vw);
+      width:min(260px, 75vw);
       margin-bottom:8px;
     }
   }
