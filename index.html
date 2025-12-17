@@ -50,14 +50,38 @@
         padding: 36px 0;
       }
     }
-    .hero h1{
+
+    /* .hero h1{
       margin:0;
       font-size: clamp(28px, 6vw, 50px);
       letter-spacing:.5px;
       text-transform:uppercase;
       line-height:1.05;
       text-shadow:0 2px 12px rgba(0,0,0,.6);
+    } */
+
+    /* Logo inside hero (replaces the old H1) */
+    .hero-img{
+      display:block;
+      width:min(520px, 85vw);   /* responsive, prevents huge logo */
+      height:auto;
+      margin:0 auto;
+      margin-bottom: 10px;
+      background: transparent;
     }
+
+    .hero-img{
+      max-width: 100%;
+    }
+
+
+    @media (max-width: 600px){
+    .hero-img{
+      width:min(380px, 92vw);
+      margin-bottom:8px;
+    }
+  }
+
     .hero .sub{
       margin-top:10px;
       font-weight:700;
@@ -189,6 +213,8 @@
       .grid{grid-template-columns:1fr;}
       iframe{height:820px;}
     }
+
+
   </style>
 </head>
 
@@ -196,7 +222,7 @@
   <!-- HERO -->
   <header class="hero">
     <div class="wrap">
-       <img src="images/transparent-brand-image.png" alt="Brand / Brand Logo" />
+       <img class="hero-img" src="images/transparent-brand-image.png" alt="Brand / Brand Logo" />
       <div class="sub">Basement Waterproofing & Foundation Repair – Des Moines Metro</div>
     </div>
   </header>
