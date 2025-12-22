@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Metro Basement Pros — Contractor Partner Info</title>
+  <meta name="description" content="Metro Basement Pros connects Des Moines homeowners with vetted basement waterproofing and foundation repair professionals." />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --muted:#a9b3c7;
+      --text:#e9eefb;
+      --accent:#5aa7ff;
+      --accent2:#7cffa7;
+      --border:rgba(255,255,255,.10);
+      --shadow: 0 18px 50px rgba(0,0,0,.45);
+      --radius:16px;
+      --max: 980px;
+      --pad: 18px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font);
+      background: radial-gradient(1200px 700px at 10% 10%, rgba(90,167,255,.18), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(124,255,167,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max); margin:0 auto; padding: 32px 18px 56px;}
+    .top{
+      display:flex; gap:16px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap;
+      margin-bottom:18px;
+    }
+    .brand{
+      display:flex; gap:12px; align-items:center;
+    }
+    .badge{
+      width:44px; height:44px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(90,167,255,.55), rgba(124,255,167,.35));
+      border:1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .brand h1{margin:0; font-size:22px; letter-spacing:.2px}
+    .brand p{margin:2px 0 0; color:var(--muted); font-size:13px}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px; border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:16px;
+    }
+    @media (max-width: 900px){
+      .grid{grid-template-columns:1fr}
+    }
+    .card{
+      background: rgba(15,26,51,.78);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .card h2{margin:0 0 8px; font-size:18px}
+    .card h3{margin:14px 0 8px; font-size:15px; color:#d9e4ff}
+    .muted{color:var(--muted)}
+    .kpi{
+      display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;
+      margin-top:10px;
+    }
+    @media (max-width: 520px){
+      .kpi{grid-template-columns:1fr}
+    }
+    .kpi .box{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.035);
+      border-radius: 14px;
+      padding: 12px;
+    }
+    .box .big{font-size:18px; font-weight:800}
+    .box .small{font-size:12px; color:var(--muted)}
+    ul{margin:10px 0 0 18px; padding:0}
+    li{margin:6px 0}
+    .steps{
+      display:grid; gap:10px;
+      margin-top:10px;
+    }
+    .step{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      border-radius:14px;
+      padding: 12px;
+      display:flex; gap:10px; align-items:flex-start;
+    }
+    .num{
+      flex:0 0 30px;
+      width:30px; height:30px; border-radius:10px;
+      display:flex; align-items:center; justify-content:center;
+      font-weight:800;
+      background: rgba(90,167,255,.18);
+      border:1px solid rgba(90,167,255,.35);
+      color:#cfe3ff;
+    }
+    .cta{
+      display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      font-weight:800;
+      letter-spacing:.2px;
+      text-decoration:none;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(90,167,255,.9), rgba(90,167,255,.55));
+      border-color: rgba(90,167,255,.55);
+      color:#051225;
+    }
+    .btn.secondary{
+      background: linear-gradient(135deg, rgba(124,255,167,.8), rgba(124,255,167,.42));
+      border-color: rgba(124,255,167,.55);
+      color:#04150b;
+    }
+    .fine{
+      margin-top:12px;
+      font-size:12px;
+      color: rgba(233,238,251,.72);
+    }
+    .footer{
+      margin-top:16px;
+      font-size:12px;
+      color: rgba(233,238,251,.65);
+      border-top:1px solid var(--border);
+      padding-top:14px;
+    }
+    .tag{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-size:12px;
+      margin: 6px 6px 0 0;
+    }
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="top">
+      <div class="brand">
+        <div class="badge" aria-hidden="true"></div>
+        <div>
+          <h1>Metro Basement Pros</h1>
+          <p>Contractor Partner Information • Des Moines Metro</p>
+        </div>
+      </div>
+
+      <div class="pill">
+        <span>Lead intake:</span>
+        <span class="mono">Website form + messaging</span>
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <!-- LEFT: MAIN PITCH -->
+      <section class="card">
+        <h2>We connect homeowners with local basement waterproofing & foundation repair pros.</h2>
+        <p class="muted">
+          Metro Basement Pros is a referral-style lead intake funnel for homeowners in the Des Moines area.
+          We are <strong>not</strong> a contractor and we do <strong>not</strong> perform or quote work.
+          Our goal is simple: send qualified homeowners to the right local company for an estimate.
+        </p>
+
+        <div class="kpi">
+          <div class="box">
+            <div class="big">Local-only</div>
+            <div class="small">Des Moines metro focus</div>
+          </div>
+          <div class="box">
+            <div class="big">High intent</div>
+            <div class="small">Leak / moisture / crack issues</div>
+          </div>
+          <div class="box">
+            <div class="big">Simple handoff</div>
+            <div class="small">Email + homeowner details</div>
+          </div>
+        </div>
+
+        <h3>What homeowners submit</h3>
+        <ul>
+          <li>Name</li>
+          <li>Email</li>
+          <li>Phone (optional)</li>
+          <li>ZIP code</li>
+          <li>Description of the problem</li>
+        </ul>
+
+        <h3>What we’re looking for in a partner</h3>
+        <ul>
+          <li>Legitimate local company with a track record</li>
+          <li>Fast response (same-day or next-day is ideal)</li>
+          <li>Clear communication and fair estimates</li>
+          <li>Service area that covers Des Moines metro</li>
+        </ul>
+
+        <h3>How the handoff works</h3>
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <strong>Homeowner reaches out</strong>
+              <div class="muted">They submit a form or message describing the issue.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <strong>We verify basics</strong>
+              <div class="muted">ZIP + issue type + best contact method.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <div>
+              <strong>We send the lead to you</strong>
+              <div class="muted">You contact the homeowner to schedule an estimate.</div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Pricing model (to discuss)</h3>
+        <p class="muted">
+          We’re validating demand first. After we confirm consistent inbound volume, we can discuss a straightforward model:
+          <strong>pay-per-lead</strong> (qualified inquiries only) or a simple <strong>monthly</strong> agreement.
+          No long-term contracts required.
+        </p>
+
+        <div class="cta">
+          <!-- Replace these with your real contact methods when ready -->
+          <a class="btn primary" href="mailto:metrobasementpros@proton.me?subject=Contractor%20Partner%20Inquiry">Email to Partner</a>
+          <a class="btn" href="https://metrobasementpros.github.io" target="_blank" rel="noopener">View Homeowner Site</a>
+          <a class="btn secondary" href="#faq">FAQ</a>
+        </div>
+
+        <p class="fine">
+          Note: Homeowner estimates and pricing are handled directly between the contractor and homeowner.
+          Metro Basement Pros is a referral / lead intake service only.
+        </p>
+      </section>
+
+      <!-- RIGHT: QUICK FACTS / FAQ -->
+      <aside class="card" id="faq">
+        <h2>Quick FAQ</h2>
+
+        <h3>Are these exclusive leads?</h3>
+        <p class="muted">
+          Ideally yes, once we have a primary partner. Early on, we may test response rates with more than one company.
+          We’ll be transparent about this.
+        </p>
+
+        <h3>How fast do you expect response?</h3>
+        <p class="muted">
+          Same-day contact is best. Basement issues are urgent—fast response wins jobs.
+        </p>
+
+        <h3>What types of jobs?</h3>
+        <div>
+          <span class="tag">Basement leaks</span>
+          <span class="tag">Moisture / seepage</span>
+          <span class="tag">Foundation cracks</span>
+          <span class="tag">Sump pump</span>
+          <span class="tag">Drain tile</span>
+          <span class="tag">Crawlspace moisture</span>
+        </div>
+
+        <h3>How do you screen leads?</h3>
+        <p class="muted">
+          ZIP + issue description + contact info. We filter obvious spam and out-of-area requests.
+        </p>
+
+        <h3>What do you need from us?</h3>
+        <ul>
+          <li>Service area ZIPs</li>
+          <li>Best contact email</li>
+          <li>Preferred lead type (waterproofing vs structural)</li>
+          <li>Response-time expectations</li>
+        </ul>
+
+        <div class="footer">
+          <div><strong>Next step:</strong> reply to the partner email with your service area + best callback number.</div>
+          <div class="muted">We’ll send you a sample lead format and confirm handoff details.</div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</body>
+</html>
